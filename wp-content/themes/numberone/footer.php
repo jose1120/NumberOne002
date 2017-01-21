@@ -26,7 +26,7 @@
 		ga('send', 'pageview');
 		</script>
 
-		<!--<?php wp_enqueue_script("jquery"); ?>-->
+		
 
 		<script type="text/javascript" src="http://192.168.33.14/wp-content/themes/numberone/js/jquery.js"></script>
         <script type="text/javascript" src="http://192.168.33.14/wp-content/themes/numberone/js/modernizr.custom.28468.js"></script>

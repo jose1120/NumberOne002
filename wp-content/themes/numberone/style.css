@@ -65,6 +65,11 @@ body
 }
 /************************** HEADER *************************************/
 
+.search, .search-input, .search-submit
+{
+	height: 30px;
+}
+
 	/************** TOP BANNER INDEX & 404 ************/
 .action-banner-bg
 {
@@ -470,7 +475,7 @@ p.caption-descr a
 {
 	border-left: 4px solid #2790B0;
 }
-.needhead .da-slide .post-content
+.needhead .da-slide p
 {
 	border-left: 4px solid #2790B0;
 }
@@ -1093,7 +1098,7 @@ p.land
 /****************************** PRELOADER **************************/
 .js div#preloader
 {
-	background: #333 url(../img/loading_page.gif) no-repeat center center;
+	background: #333 url(assets/img/loading_page.gif) no-repeat center center;
 	height: 100%;
 	left: 0;
 	overflow: visible;
@@ -1126,7 +1131,7 @@ p.land
 }
 .flex-direction-nav a
 {
-	background: #2790B0 url(../../assets/img/bg_direction_nav.png) no-repeat 0 0;
+	background: #2790B0 url(assets/img/bg_direction_nav.png) no-repeat 0 0;
 	-moz-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -1229,7 +1234,7 @@ p.features:hover
 }
 .label-xl, .badge-xl
 {
-	background: #2790B0 url(../../assets/img/header-shine.png) top left no-repeat;
+	background: #2790B0 url(assets/img/header-shine.png) top left no-repeat;
 	background-size: 100% 100%;
 	color: #ffffff;
 	display: inline-block;
@@ -1244,7 +1249,7 @@ p.features:hover
 }
 .label-l, .badge-l
 {
-	background: #2790B0 url(../../assets/img/header-shine.png) top left no-repeat;
+	background: #2790B0 url(assets/img/header-shine.png) top left no-repeat;
 	background-size: 100% 100%;
 	color: #ffffff;
 	display: inline-block;
@@ -2097,11 +2102,11 @@ video
 /**************************** TO TOP (badge to scroll to top)**************/
 #toTop
 {
-	background: #2790B0 url(../../assets/img/totop.png) top left no-repeat;
+	background: #2790B0 url(assets/img/totop.png) top left no-repeat;
 }
 #toTop:hover
 {
-	background: #0085BD url(../../assets/img/totop.png) top left no-repeat;
+	background: #0085BD url(assets/img/totop.png) top left no-repeat;
 	box-shadow: 6px 6px 4px rgba(50, 50, 50, 0.22);
 	-moz-box-shadow: 6px 6px 4px rgba(50, 50, 50, 0.22);
 	-webkit-box-shadow: 6px 6px 4px rgba(50, 50, 50, 0.22);
@@ -2438,7 +2443,7 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 .footer {
 	margin-top: 70px;
 	border-top: 1px solid #e5e5e5;
-	background:#222 url(../img/bg_footer.png);
+	background:#222 url(assets/img/bg_footer.png);
 	padding: 30px 0 0 0;
 	color: #919191;
 }
@@ -2809,7 +2814,7 @@ padding-right:0px;
 	}
 	.label-xl, .badge-xl
 	{
-		background: #2790B0 url(../../assets/img/header-shine.png) top left no-repeat;
+		background: #2790B0 url(assets/img/header-shine.png) top left no-repeat;
 		background-size: 100% 100%;
 		color: #ffffff;
 		display: inline-block;
@@ -2825,7 +2830,7 @@ padding-right:0px;
 	}
 	.label-l, .badge-l
 	{
-		background: #2790B0 url(../../assets/img/header-shine.png) top left no-repeat;
+		background: #2790B0 url(assets/img/header-shine.png) top left no-repeat;
 		background-size: 100% 100%;
 		color: #ffffff;
 		display: inline-block;

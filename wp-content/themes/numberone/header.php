@@ -85,7 +85,7 @@
 							<div class="da-slide">
 								<h2><?php the_title(); ?></h2>
 
-								<span class="post-content"><?php the_content(); // Dynamic Content ?></span>
+								<?php the_content(); ?>
 								
 								
 							</div>
@@ -159,6 +159,7 @@
 									</a>
 								</li>
 							</ul>
+							<?php get_template_part('searchform'); ?>
 						</div><!--row-->
 					</div><!--container-->
 				</div><!--top-soc-->
