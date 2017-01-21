@@ -159,7 +159,10 @@
 									</a>
 								</li>
 							</ul>
-							<?php get_template_part('searchform'); ?>
+							<form class="form-wrapper cf" method="get" action="<?php echo home_url(); ?>" role="search"> 
+  								<input type="search" name="s" class="search-form" placeholder="<?php _e( 'Search...', 'html5blank' ); ?>" required>
+	  							<button type="submit" role="button"><?php _e( 'Search', 'html5blank' ); ?></button>
+							</form>
 						</div><!--row-->
 					</div><!--container-->
 				</div><!--top-soc-->
