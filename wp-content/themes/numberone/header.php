@@ -87,6 +87,13 @@
 
 								<?php the_content(); ?>
 								
+								<div class="da-link">
+								
+									<span class="main-link"><i class="fa fa-tablet"></i> <?php if (comments_open( get_the_ID() ) ) comments_popup_link(  __( 'Comment on this post', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
+
+									<span class="arrow"> &rarr; </span>
+								
+								</div>
 								
 							</div>
 							
@@ -161,7 +168,7 @@
 							</ul>
 							<form class="form-wrapper cf" method="get" action="<?php echo home_url(); ?>" role="search"> 
   								<input type="search" name="s" class="search-form" placeholder="<?php _e( 'Search...', 'html5blank' ); ?>" required>
-	  							<button type="submit" role="button"><?php _e( 'Search', 'html5blank' ); ?></button>
+	  							<button type="submit" role="button"><i class="fa fa-search"></i><?php _e( '', 'html5blank' ); ?></button>
 							</form>
 						</div><!--row-->
 					</div><!--container-->

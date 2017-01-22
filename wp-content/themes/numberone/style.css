@@ -92,7 +92,7 @@ body
     
     .form-wrapper {
 		float:right;
-        min-width: 200px;
+        min-width: 100px;
         padding: 6px;
         background: #444;
         background: rgba(0,0,0,.2);
@@ -153,11 +153,11 @@ body
         padding: 0;
         cursor: pointer;
         height: 28px;
-        width: 85px;
+        width: 40px;
         font: bold 12px 'lucida sans', 'trebuchet MS', 'Tahoma';
         color: #fff;
         text-transform: uppercase;
-        background: #d83c3c;
+        background: #0085BD;
         -moz-border-radius: 0 7px 7px 0;
         -webkit-border-radius: 0 7px 7px 0;
         border-radius: 0 7px 7px 0;      
@@ -165,12 +165,12 @@ body
     }   
       
     .form-wrapper button:hover{		
-        background: #e54040;
+        background: #0085BD;
     }	
       
     .form-wrapper button:active,
     .form-wrapper button:focus{   
-        background: #c42f2f;    
+        background: #0085BD;    
     }
     
     .form-wrapper button:before {
@@ -178,17 +178,17 @@ body
         position: absolute;
         border-width: 8px 8px 8px 0;
         border-style: solid solid solid none;
-        border-color: transparent #d83c3c transparent;
+        border-color: transparent #0085BD transparent;
         top: 7px;
         left: -6px;
     }
     
     .form-wrapper button:hover:before{
-        border-right-color: #e54040;
+        border-right-color: #0085BD;
     }
     
     .form-wrapper button:focus:before{
-        border-right-color: #c42f2f;
+        border-right-color: #0085BD;
     }    
     
     .form-wrapper button::-moz-focus-inner {
