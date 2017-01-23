@@ -1,15 +1,80 @@
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
-
-			</footer>
-			<!-- /footer -->
+<footer class="footer">
+  <div class="container">
+    
+    <div class="row-fluid">
+      <div class="span3">
+        <h4 class="line3 center standart-h4title"><span>Navigation</span></h4>
+        <ul class="footer-links">
+          <?php html5blank_nav(); ?>
+        </ul>
+      </div>
+      <div class="span3">
+        <h4 class="line3 center standart-h4title"><span>Useful Links</span></h4>
+        <ul class="footer-links">
+          
+        </ul>
+      </div>
+      <div class="span3">
+        <h4 class="line3 center standart-h4title"><span>My office</span></h4>
+       <address>
+			<strong>Rhino, Inc.</strong><br>
+			<i class="fa fa-map-marker"></i> 700 Van Ness Ave, <br>
+			Fresno, CA 93721<br>
+			<i class="fa fa-phone"></i> (559) 457-8816
+			<div class="foot-line"></div>
+									  
+		</address>
+      </div>
+      <div class="span3">
+        <h4 class="line3 center standart-h4title"><span>Stay in touch</span></h4>
+        
+        <div class="widget_nav_menu"> 
+				<ul class="socialIcons">
+						<li class="vimeo"><a href="#">vimeo </a></li>
+						<li class="facebook"><a href="#">facebook </a></li>
+						<li class="linkedin"><a href="#">linkedin </a></li>
+						<li class="twitter"><a href="#">twitter</a></li>
+						<li class="twitter2"><a href="#">twitter2</a></li>
+						<li class="pinterest"><a href="#">pinterest</a></li>
+						<li class="flickr"><a href="#">flickr </a></li>
+						<li class="digg"><a href="#">digg</a></li>
+						<li class="yahoo1"><a href="#">yahoo1</a></li>
+						<li class="yahoo2"><a href="#">yahoo2</a></li>
+						<li class="reddit"><a href="#">reddit</a></li>
+						<li class="googleplus"><a href="#">googleplus</a></li>
+						<li class="stumbleupon"><a href="#">stumbleupon</a></li>
+						<li class="skype"><a href="#">skype</a></li>
+						<li class="deviantart"><a href="#">deviantart</a></li>
+						<li class="delicious"><a href="#">delicious </a></li>
+						<li class="tumblr"><a href="#">tumblr </a></li>
+						<li class="lastfm"><a href="#">lastfm </a></li>
+						<li class="youtube"><a href="#">youtube</a></li>
+						<li class="friendfeed"><a href="#">friendfeed </a></li>
+						<li class="myspace"><a href="#">myspace </a></li>
+						<li class="rss"><a href="#">rss </a></li>
+						<li class="badoo"><a href="#">badoo </a></li>
+						<li class="dribble"><a href="#">dribble </a></li>
+						<li class="blogger"><a href="#">blogger </a></li>
+						<li class="homeicon"><a href="#">homeicon</a></li>
+						<li class="phone"><a href="#">phone </a></li>
+						<li class="email"><a href="#">email </a></li>
+						<li class="picassa"><a href="#">picassa </a></li>
+						<li class="livejournal"><a href="#">livejournal </a></li>
+						<li class="bebo"><a href="#">bebo </a></li>
+						<li class="technorati"><a href="#">technorati </a></li>
+						<li class="newsvine"><a href="#">newsvine</a></li>
+						<li class="wordpress"><a href="#">wordpress </a></li>
+						<li class="yelp"><a href="#">yelp </a></li>
+                   </ul>
+				</div>
+      </div>
+    </div>
+    <hr class="half1 copyhr">
+    <div class="row-fluid copyright">
+      <div class="span12 center">Copyright &copy; 2012. VERSO</div>
+    </div>
+  </div>
+</footer>
 
 		</div>
 		<!-- /wrapper -->

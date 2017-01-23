@@ -578,4 +578,99 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
     return '<h2>' . $content . '</h2>';
 }
 
+function numberone_cuztomizer_register($wp_customize){
+    $wp_customize -> add_section('numberone_colors', array(
+        'title' => __('Colors', 'numberone'),
+        'description' => 'Modify the theme colors'
+    ));
+    $wp_customize -> add_setting('theme_color', array(
+        'default' => '#2790B0',
+    ));
+    $wp_customize -> add_control( new WP_Customize_Color_Control($wp_customize, 'theme_color', array(
+        'label' => __('Edit theme Color', 'numberone'),
+        'section' => 'numberone_colors',
+        'settings' => 'theme_color' 
+    )));
+
+    $wp_customize -> add_section('numberone_background', array(
+        'title' => __('background', 'numberone'),
+        'description' => 'change the Header Image'
+    ));
+    $wp_customize -> add_setting('header_image', array(
+        'default' => '/assets/img/background.jpg',
+    ));
+    $wp_customize -> add_control( new WP_Customize_Image_Control($wp_customize, 'header_image', array(
+        'label' => __('Edit Link Hover', 'numberone'),
+        'section' => 'numberone_background',
+        'settings' => 'header_image'
+    )));
+}
+
+function numberone_css_customizer(){
+    ?>
+
+    <style type="text/css">
+
+        .needhead p, .needhead h1, .da-slide h2, .needhead .da-slide p, .dropdown-submenu:hover > a:after, .well, .well:before, .border-left-color, .label-xl:after, .label-l:after, .widget-archive > li a
+        {
+            border-left-color: <?php echo get_theme_mod('theme_color') ?>;
+        }
+
+        .folio-title, .nav-reaction .dropdown-menu, .dropdown-menu, .navbar .nav > li > .dropdown-menu:before, .dropdown-submenu > ul, .line, .line span, .line span:before
+        {
+            border-bottom-color: <?php echo get_theme_mod('theme_color') ?>;
+        }
+
+        .navbar .brand span, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle, .nav-reaction .dropdown-menu li:hover, .nav-reaction .dropdown-menu li:focus, .navbar .nav > li > a, .navbar .nav > li > .dropdown-menu a:hover, .dropdown-submenu .sfHover > a:hover, .navbar .nav .sfHover > a li.dropdown .shHover > a, .dropdown-submenu:hover > a, .dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-menu .active > a, .dropdown-menu .active > a:hover, .marketing .marketing-byline span, blockquote p:before, blockquote p:after, #filters .dropdown-menu li a:hover, .footer-links li a
+        {
+            color: <?php echo get_theme_mod('theme_color') ?>;
+        }
+
+        .nav-reaction, .nav-reaction .dropdown-menu, .dropdown-submenu > ul, .navbar .nav > li:last-child .dropdown-submenu > ul
+        {
+            border-top-color: <?php echo get_theme_mod('theme_color') ?>;
+        }
+
+        .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle, .blog .nav-pills li.active a, .blog .nav-pills li a:hover, .form-wrapper button, .form-wrapper button:hover, .form-wrapper button:active, .form-wrapper button:focus, .action-banner-bg, .page-header, .breadcrumb, .social-top li:hover, .navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus, .navbar .nav > li > a:hover, .navbar .nav > li > a:hover, .navbar .nav >.sfHover > a, .flex-direction-nav a, .label-xl, .badge-xl,.label-l, .badge-l, .blog .blog-post-tags li a:hover, #filters a, #filters-blog a, #toTop, #toTop:hover
+        {
+            background-color: <?php echo get_theme_mod('theme_color') ?>;
+        }
+
+        .navbar .nav li.dropdown > .dropdown-toggle .caret, #filters .dropdown-menu:before
+        {
+	        border-bottom-color: <?php echo get_theme_mod('theme_color') ?>;
+	        border-top-color: <?php echo get_theme_mod('theme_color') ?>;
+        }
+
+        .blog .blog-post-tags li a:hover, .form-wrapper button:before
+        {
+            border-color: transparent <?php echo get_theme_mod('theme_color') ?> transparent;
+        }
+
+        .form-wrapper button:hover:before, .form-wrapper button:focus:before
+        {
+            border-right-color: <?php echo get_theme_mod('theme_color') ?>;
+        }
+    </style>
+
+    <?php
+}
+
+function numberone_header_image(){
+    ?>
+    <style type="text/css">
+        .action-banner-bg, .page-header
+        {
+            background: url(<?php echo get_theme_mod('header_image');?>) ;
+        }
+    </style>
+    <?php
+}
+
+
+add_action('wp_head', 'numberone_header_image');
+add_action('wp_head', 'numberone_css_customizer');
+add_action('customize_register', 'numberone_cuztomizer_register');
+
+
 ?>

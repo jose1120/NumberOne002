@@ -38,8 +38,9 @@
 
 		<!--Start Main-wrapper-->
         <div class="main-wrapper">
+			
     		<div class="headtop needhead">
-        		<div class="action-banner-bg"></div>
+				<div class="action-banner-bg" ></div>
         		<div class="action-banner-bg-top"></div>
 
         		<div class="nav-reaction">
@@ -50,6 +51,7 @@
                         		<a class="brand" href="#">
 									<span><?php bloginfo('name'); ?></span>
                         		</a>
+								
 							</div>
                         		<div id="main-nav">
                             		<div class="nav-collapse collapse">
@@ -89,7 +91,7 @@
 								
 								<div class="da-link">
 								
-									<span class="main-link"><i class="fa fa-tablet"></i> <?php if (comments_open( get_the_ID() ) ) comments_popup_link(  __( 'Comment on this post', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
+									<a class="main-link" href="<?php comments_link();?>"><i class="fa fa-comment"></i>  Comment on Post</a>
 
 									<span class="arrow"> &rarr; </span>
 								
